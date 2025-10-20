@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(0, 38, 255);
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    text-align: center;
+}
+
+#novo-emprestimo {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(178, 178, 194);
+    width: 320px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#item::placeholder , #nome::placeholder {
+    padding: 15px;
+}
+
+#nome {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#item {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#botao {
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 38, 255);
+    border: 0;
+}
+
+#ativo {
+    padding: 40px 40px 25px 40px;
+}
+
+#list-emprestados {
+    background: white;
+    box-shadow: -5px 0px 0px 0px rgb(0, 38, 255), 0px 0px 10px 0px rgb(178, 178, 194);
+    width: 320px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#new-item {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin: 30px 0 2px 20px;
+}
+
+#new-nome {
+    font-size: 15px;
+    text-align: left;
+    margin: 2px 0 20px 20px;
+}
+
+#devolvido {
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 104, 26);
+    border: 0;
+    margin: 0 auto 20px auto;
+}
