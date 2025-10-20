@@ -3,12 +3,27 @@ const itemInput = document.getElementById("item")
 const botaoEnviar = document.getElementById("botao")
 const resultado = document.getElementById("list-emprestados")
 
+
 botaoEnviar.addEventListener('click', () => {
     const nome = nomeInput.value;
     const item = itemInput.value;
+    
+    const div = document.createElement('div');
 
-    resultado.innerHTML += `
-    <div id="emprestado"><p id="new-item">${item}</p> 
-    <p id="new-nome">Emprestado para: ${nome}.</p> 
-    <button id="devolvido">Devolvido</button></div>`;
-})
+    div.classList.add('emprestado');
+
+    div.innerHTML = `
+    <p class="new-item">${item}</p> 
+    <p class="new-nome">Emprestado para: ${nome}.</p> 
+    <button class="devolvido" >Devolvido</button></div>
+    `;
+    
+    div.querySelector('.devolvido').addEventListener('click', () => {
+        div.remove();
+    });
+    
+    resultado.appendChild(div);
+    
+    nomeInput.value = "";
+    itemInput.value = "";
+});

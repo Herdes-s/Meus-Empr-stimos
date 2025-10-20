@@ -61,7 +61,14 @@ p {
     padding: 40px 40px 25px 40px;
 }
 
-#emprestado {
+
+#list-emprestados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.emprestado {
     background: white;
     box-shadow: -5px 0px 0px 0px rgb(0, 38, 255), 0px 0px 10px 0px rgb(178, 178, 194);
     width: 320px;
@@ -71,26 +78,20 @@ p {
     flex-direction: column;
 }
 
-#list-emprestados {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#new-item {
+.new-item {
     font-weight: bold;
     font-size: 20px;
     text-align: left;
     margin: 30px 0 2px 20px;
 }
 
-#new-nome {
+.new-nome {
     font-size: 15px;
     text-align: left;
     margin: 2px 0 20px 20px;
 }
 
-#devolvido {
+.devolvido {
     height: 30px;
     width: 250px;
     border-radius: 5px;
