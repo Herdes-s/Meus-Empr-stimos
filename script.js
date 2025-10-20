@@ -3,11 +3,14 @@ const itemInput = document.getElementById("item")
 const botaoEnviar = document.getElementById("botao")
 const resultado = document.getElementById("list-emprestados")
 
-
-botaoEnviar.addEventListener('click', () => {
-    const nome = nomeInput.value;
-    const item = itemInput.value;
-    
+    botaoEnviar.addEventListener('click', () => {
+        const nome = nomeInput.value;
+        const item = itemInput.value;
+        
+        if (nomeInput.value === "" && itemInput.value === "") {
+         alert("Erro!");
+         return;
+        }
     const div = document.createElement('div');
 
     div.classList.add('emprestado');
