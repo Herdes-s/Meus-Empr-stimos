@@ -7,8 +7,8 @@ const resultado = document.getElementById("list-emprestados")
         const nome = nomeInput.value;
         const item = itemInput.value;
         
-        if (nomeInput.value === "" && itemInput.value === "") {
-         alert("Erro!");
+        if (nomeInput.value === "" || itemInput.value === "") {
+         alert("Erro! Espaço vazio!");
          return;
         }
     const div = document.createElement('div');
