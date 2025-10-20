@@ -61,7 +61,7 @@ p {
     padding: 40px 40px 25px 40px;
 }
 
-#list-emprestados {
+#emprestado {
     background: white;
     box-shadow: -5px 0px 0px 0px rgb(0, 38, 255), 0px 0px 10px 0px rgb(178, 178, 194);
     width: 320px;
@@ -69,6 +69,12 @@ p {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+#list-emprestados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #new-item {

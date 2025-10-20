@@ -8,7 +8,7 @@ botaoEnviar.addEventListener('click', () => {
     const item = itemInput.value;
 
     resultado.innerHTML += `
-    <p id="new-item">${item}</p> 
+    <div id="emprestado"><p id="new-item">${item}</p> 
     <p id="new-nome">Emprestado para: ${nome}.</p> 
-    <button id="devolvido">Devolvido</button>`;
+    <button id="devolvido">Devolvido</button></div>`;
 })
